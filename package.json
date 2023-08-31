@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "deploy": "gh-pages -d ./"
+    "deploy": "gh-pages -d ./",
+    "sass": "sass --watch src/scss/main.scss style.css"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.66.1"
   }
 }
