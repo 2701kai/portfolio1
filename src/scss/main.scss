@@ -306,3 +306,75 @@ body {
 //       }
 //     }
 //   }
+
+// ----------------------------------------------------------------------
+// PORTFOLIO
+// ----------------------------------------------------------------------
+#Portfolio {
+    p {
+        color: #fff;
+    }
+}
+
+.portfolio-header {
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    max-width: 50rem;
+    margin-inline: auto;
+//   padding-inline: 1rem; 
+  }
+
+ .portfolio {
+    padding-block: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 255, 255, 0.8);
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 10px;
+        margin: 35px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+        padding: 10px;
+        margin: 35px;
+    }
+    
+ }
+
+ .diagonal {
+    --skew-angle: -5deg;
+    position: relative;
+    isolation: isolate;
+    &::after {
+        content: '';
+        background: linear-gradient(45deg,
+            rgba(15, 36, 0, 1) 0%,
+            rgba(67, 121, 9, 1) 35%,
+            rgba(188, 255, 0, 0.3) 100%);
+        opacity: 0.9;
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        transform: skewY(var(--skew-angle));
+      }
+ }
