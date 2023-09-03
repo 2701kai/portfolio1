@@ -7,6 +7,10 @@ body {
   background-color: #262626;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
