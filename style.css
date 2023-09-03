@@ -122,6 +122,50 @@ i {
   font-size: 1.5rem;
 }
 
+.hamburger-menu {
+  display: none;
+}
+.hamburger-menu i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-wrapper ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-wrapper li {
+  display: inline-block;
+}
+.menu-wrapper a {
+  text-decoration: none;
+  color: #447ff4;
+  font-weight: bold;
+}
+.menu-wrapper a:hover {
+  color: #ff4a11;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .menu-wrapper {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #262626;
+  }
+  .menu-wrapper ul {
+    flex-direction: column;
+  }
+  .menu-wrapper li {
+    text-align: center;
+  }
+}
 .main-header {
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.8);
