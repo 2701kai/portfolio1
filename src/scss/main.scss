@@ -36,14 +36,14 @@ body {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   h3 {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   h4 {
@@ -194,4 +194,5 @@ body {
 // ==================================================
 .main-header {
     @include myHeader;
+    margin-bottom: 2rem;
     }
