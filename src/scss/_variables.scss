@@ -19,6 +19,38 @@ $myBgColor: #262626;
   font-family: "Bruno Ace SC", cursive;
 }
 
+// ==================================================
+// EFFEKTE
+// ==================================================
+
+@mixin parallax {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin diagonal {
+  --skew-angle: -5deg;
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      rgba(15, 36, 0, 1) 0%,
+      rgba(67, 121, 9, 1) 35%,
+      rgba(188, 255, 0, 0.3) 100%
+    );
+    opacity: 0.9;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+  }
+}
+
 // Sadly.. doesn´t work as expected - Iĺl get back to it later.
 // $myNav: (
 //   ul: (
