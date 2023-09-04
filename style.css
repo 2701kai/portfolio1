@@ -250,12 +250,12 @@ i {
 }
 
 .nav-footer {
-  border: 10px solid red;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 1.5rem;
+  flex: 1 1 0;
   background-color: black;
 }
 .nav-footer a {
