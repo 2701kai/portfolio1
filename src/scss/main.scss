@@ -12,6 +12,11 @@
 //     }
 //   }
 
+html {
+  // font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $myFont;
   font-size: 1.4rem;
@@ -74,6 +79,7 @@ h6 {
 
 p {
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 a {
@@ -285,16 +291,25 @@ i {
 }
 
 .portfolio {
-  padding-block: 5rem;
+  padding-block: 2.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   justify-items: center;
   align-items: center;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
   h2 {
     font-family: "Poppins", sans-serif;
-    color: rgb(255, 255, 255, 0.8);
     text-align: center;
     font-size: 40px;
   }
@@ -303,7 +318,6 @@ i {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
     padding: 10px;
     margin: 35px;
   }
@@ -315,6 +329,7 @@ i {
     line-height: 1.5em;
     padding: 10px;
     margin: 35px;
+    color: rgb(255, 255, 255, 0.9);
   }
 }
 
