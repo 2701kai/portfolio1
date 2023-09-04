@@ -7,7 +7,12 @@ body {
   background-color: #262626;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
@@ -265,6 +270,12 @@ i {
 }
 .nav-footer:hover {
   color: #ff4a11;
+}
+@media (max-width: 767px) {
+  .nav-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
