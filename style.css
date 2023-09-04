@@ -221,11 +221,12 @@ i {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Bruno Ace SC", cursive;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 2rem;
-}
-
-#Portfolio p {
-  color: #fff;
 }
 
 .portfolio-header {
@@ -261,8 +262,7 @@ i {
 }
 .portfolio h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 30px;
   padding: 10px;
   margin: 35px;
 }
