@@ -1,1 +1,44 @@
 // $myNav
+$myOrange: #ff4a11;
+$myBlue: #447ff4;
+$myBlueLight: #2ea3f2;
+$myBgColor: #262626;
+
+@mixin myHeader {
+    // margin-top: 50px;
+    min-height: 100vh;
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./assets/galaxy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Bruno Ace SC", cursive;
+  }
+
+// Sadly.. doesn´t work as expected - Iĺl get back to it later.
+// $myNav: (
+//   ul: (
+//     margin: 0,
+//     padding: 0,
+//     list-style: none,
+//     display: flex,
+//     justify-content: space-evenly
+//   ),
+//   li: (
+//     display: inline-block
+//   ),
+//   a: (
+//     display: block,
+//     padding: 6px 12px,
+//     text-decoration: none,
+//     '&:hover': (
+//       color: $myOrange
+//     )
+//   )
+// );
+
+$myFont: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
