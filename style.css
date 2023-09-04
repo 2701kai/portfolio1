@@ -289,11 +289,9 @@ i {
 }
 .nav-footer a {
   padding: 1rem;
-  margin: 1rem;
-  font-size: 1rem;
 }
 .nav-footer a i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #2ea3f2;
 }
 .nav-footer a i:hover {
@@ -303,6 +301,12 @@ i {
   .nav-footer {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .nav-footer a {
+    padding: 0.5rem;
+  }
+  .nav-footer a i {
+    font-size: 1.25rem;
   }
 }
 

@@ -356,12 +356,11 @@ i {
 
   a {
     padding: 1rem;
-    margin: 1rem;
-    font-size: 1rem;
+    // margin: 1rem;
+    // font-size: 1rem;
     i {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: $myBlueLight;
-      // color: white;
       &:hover {
         color: $myOrange;
       }
@@ -373,5 +372,11 @@ i {
   @media (max-width: 767px) {
     flex-direction: column;
     gap: 0.5rem;
+    a {
+      padding: 0.5rem;
+      i {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
