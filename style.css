@@ -1,3 +1,32 @@
+.nav-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1 1 0;
+  background-color: black;
+}
+.nav-footer a {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+.nav-footer a i {
+  font-size: 1.5rem;
+  color: white;
+}
+.nav-footer:hover {
+  color: #ff4a11;
+}
+@media (max-width: 767px) {
+  .nav-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 body {
   font-family: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   font-size: 1.4rem;
@@ -260,21 +289,24 @@ i {
 }
 .nav-footer a {
   padding: 1rem;
-  margin: 1rem;
-  font-size: 1rem;
-  color: white;
 }
 .nav-footer a i {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 2rem;
+  color: #2ea3f2;
 }
-.nav-footer:hover {
+.nav-footer a i:hover {
   color: #ff4a11;
 }
 @media (max-width: 767px) {
   .nav-footer {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .nav-footer a {
+    padding: 0.5rem;
+  }
+  .nav-footer a i {
+    font-size: 1.25rem;
   }
 }
 

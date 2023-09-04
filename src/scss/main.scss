@@ -1,4 +1,5 @@
 @import "variables";
+@import "myfooter";
 
 // Sadly.. doesn´t work as expected - Iĺl get back to it later.
 // .nav-main {
@@ -341,6 +342,9 @@ i {
 // FOOTER
 // ==================================================
 .nav-footer {
+  // @use "myfooter";
+  //   @mixin myFooter;
+  // }
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -352,23 +356,27 @@ i {
 
   a {
     padding: 1rem;
-    margin: 1rem;
-    font-size: 1rem;
-    color: white;
-
+    // margin: 1rem;
+    // font-size: 1rem;
     i {
-      font-size: 1.5rem;
-      color: white;
+      font-size: 2rem;
+      color: $myBlueLight;
+      &:hover {
+        color: $myOrange;
+      }
     }
   }
 
-  &:hover {
-    color: $myOrange;
-  }
   // Media query for screens smaller than 768px
 
   @media (max-width: 767px) {
     flex-direction: column;
     gap: 0.5rem;
+    a {
+      padding: 0.5rem;
+      i {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
