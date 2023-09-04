@@ -185,28 +185,6 @@ i {
   margin-bottom: 2rem;
 }
 
-.nav-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1.5rem;
-  background-color: black;
-}
-.nav-footer a {
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 1rem;
-  color: white;
-}
-.nav-footer a i {
-  font-size: 1.5rem;
-  color: white;
-}
-.nav-footer:hover {
-  color: #ff4a11;
-}
-
 #Portfolio p {
   color: #fff;
 }
@@ -264,6 +242,28 @@ i {
   z-index: -1;
   inset: 0;
   transform: skewY(var(--skew-angle));
+}
+
+.nav-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: black;
+}
+.nav-footer a {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+.nav-footer a i {
+  font-size: 1.5rem;
+  color: white;
+}
+.nav-footer:hover {
+  color: #ff4a11;
 }
 
 /*# sourceMappingURL=style.css.map */
