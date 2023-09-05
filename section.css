@@ -37,6 +37,11 @@
   line-height: 1.6rem;
 }
 
+.card-content > i {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
 .button {
   border: 1px solid blue;
   padding: 0.5rem 1rem;
