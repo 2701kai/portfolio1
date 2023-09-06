@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Event-Listener for Sublinks
-  const subLinks = document.querySelectorAll(".menu-wrapper a"); // Ändere den Selektor entsprechend deiner HTML-Struktur
+  const subLinks = document.querySelectorAll(".menu-wrapper a");
   subLinks.forEach(function (link) {
     link.addEventListener("click", function () {
       menuWrapper.style.display = "none";
