@@ -1,4 +1,5 @@
 @import "variables";
+@import "myfooter";
 
 // Sadly.. doesn´t work as expected - Iĺl get back to it later.
 // .nav-main {
@@ -11,219 +12,232 @@
 //     }
 //   }
 
-body {
-    font-family: $myFont;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    background-color: $myBgColor
-   }
-
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
+html {
+  // font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
+body {
+  font-family: $myFont;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: $myBgColor;
+}
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
 
-  h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-  }
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-  h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
 
-  h5 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
 
-  h6 {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-  p {
-    margin-bottom: 1rem;
-  }
+h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-  a {
-    color: $myBlue;
-    text-decoration: none;
-    &:hover {
-      color: $myOrange;
-    }
-  }
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-  img {
-    width: 100%;
-    display: block;
-  }
+p {
+  margin-bottom: 1rem;
+  color: #fff;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+a {
+  color: $myBlue;
+  text-decoration: none;
+  &:hover {
+    color: $myOrange;
   }
+}
 
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: $myBlue;
-    // color: $myWhite;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    &:hover {
-      background-color: $myOrange;
-    }
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $myBlue;
+  // color: $myWhite;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background-color: $myOrange;
   }
+}
 
 //   .btn-primary {
 //     background-color: $
 // }
 
-
-
 .nav-main {
-    // nav {
-        // border: 2px solid red;
-        top: 0;
-        // min-width: 100vw;
-        width: 100%;
-        background-color: #26262643;
-        // margin-top: -50px;
-        // display: flex;
-        // justify-content: baseline;
-        //  margin-bottom: 100px;
-        // padding: 10px 35px;
-        position: fixed;
-        // position: sticky;
-        z-index: 100;
-      }
+  // nav {
+  // border: 2px solid red;
+  top: 0;
+  // min-width: 100vw;
+  width: 100%;
+  background-color: #26262643;
+  // margin-top: -50px;
+  // display: flex;
+  // justify-content: baseline;
+  //  margin-bottom: 100px;
+  // padding: 10px 35px;
+  position: fixed;
+  // position: sticky;
+  z-index: 100;
+}
 
-    ul {
+ul {
+  //   border: 2px solid green;
+  //   margin: 0;
+  //   padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  //   display: block;
+  //   padding: 6px 12px;
+  text-decoration: none;
+  color: $myBlue;
+  //   font-size: 1.5rem;
+  font-weight: bold;
+
+  &:hover {
+    color: $myOrange;
+  }
+}
+
+img {
+  height: 2rem;
+  // margin: 5px 0;
+}
+
+i {
+  font-size: 1.5rem;
+  // margin: 0 0.5rem;
+}
+
+// Hamburger Menu
+
+.hamburger-menu {
+  display: none;
+
+  i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.menu-wrapper {
+  ul {
     //   border: 2px solid green;
     //   margin: 0;
     //   padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-  
-    li { display: inline-block; }
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    a {
+  li {
+    display: inline-block;
+  }
+
+  a {
     //   display: block;
     //   padding: 6px 12px;
-      text-decoration: none;
-      color: $myBlue;
+    text-decoration: none;
+    color: $myBlue;
     //   font-size: 1.5rem;
-      font-weight: bold;
-      
-      &:hover {
-        color: $myOrange;
-          }
-    }
-    
-    img {
-        height: 2rem;
-        // margin: 5px 0;
-    }
+    font-weight: bold;
 
-    i {
-        font-size: 1.5rem;
-        // margin: 0 0.5rem;
+    &:hover {
+      color: $myOrange;
     }
-
-// Hamburger Menu
-    
-.hamburger-menu {
-        display: none;
-        
-        i {
-          font-size: 24px;
-          cursor: pointer;
-        }
-      }
-
-.menu-wrapper {
-        ul {
-            //   border: 2px solid green;
-            //   margin: 0;
-            //   padding: 0;
-              list-style: none;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-evenly;
-              align-items: center;
-            }
-          
-            li { display: inline-block; }
-        
-            a {
-            //   display: block;
-            //   padding: 6px 12px;
-              text-decoration: none;
-              color: $myBlue;
-            //   font-size: 1.5rem;
-              font-weight: bold;
-              
-              &:hover {
-                color: $myOrange;
-                  }
-            }
-        }
+  }
+}
 
 @media (max-width: 768px) {
-            .hamburger-menu {
-              display: block;  // Show hamburger menu on mobile
-            }
-            
-            .menu-wrapper {
-              display: none;  // Hide actual menu on mobile
-              
-              // Make it ready for showing as a dropdown
-              position: absolute;
-              width: 100%;
-              background-color: #262626;
-              
-              ul {
-                flex-direction: column;
-              }
-              
-              li {
-                text-align: center;
-              }
-            }
-          }
-        
+  .hamburger-menu {
+    display: block; // Show hamburger menu on mobile
+  }
+
+  .menu-wrapper {
+    display: none; // Hide actual menu on mobile
+
+    // Make it ready for showing as a dropdown
+    position: absolute;
+    width: 100%;
+    background-color: #262626;
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+}
+
 // }
 
 // nav {
@@ -234,7 +248,7 @@ body {
 //       display: flex;
 //       justify-content: space-evenly;
 //     }
-  
+
 //     li { display: inline-block; }
 
 //     a {
@@ -242,7 +256,7 @@ body {
 //       padding: 6px 12px;
 //       text-decoration: none;
 //       color: $myBlue;
-      
+
 //       &:hover {
 //         color: $myOrange;
 //           }
@@ -253,134 +267,171 @@ body {
 // HEADER
 // ==================================================
 .main-header {
-    @include myHeader;
-    margin-bottom: 2rem;
-    }
+  @include myHeader;
+  @include parallax;
+  margin-bottom: 2rem;
+}
 
 // ==================================================
 // PORTFOLIO
 // ==================================================
-#Portfolio {
-    p {
-        color: #fff;
-    }
-}
+// #Portfolio {
+//   p {
+//     color: #fff;
+//   }
+// }
 
 .portfolio-header {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .wrapper {
-    max-width: 50rem;
-    margin-inline: auto;
-//   padding-inline: 1rem; 
+  max-width: 50rem;
+  margin-inline: auto;
+  //   padding-inline: 1rem;
+}
+
+.portfolio {
+  padding-block: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
   }
 
- .portfolio {
-    padding-block: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    justify-items: center;
-    align-items: center;
+  h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 40px;
+  }
 
-    h2 {
-        font-family: "Poppins", sans-serif;
-        color: rgb(255, 255, 255, 0.8);
-        text-align: center;
-        font-size: 40px;
-    }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    // font-weight: 700;
+    padding: 10px;
+    margin: 35px;
+  }
 
-    h3 {
-        font-family: "Roboto", sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        color: #ffffff;
-        padding: 10px;
-        margin: 35px;
-    }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    padding: 10px;
+    margin: 35px;
+    color: rgb(255, 255, 255, 0.9);
+  }
+}
 
-    p {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        letter-spacing: 0.1em;
-        line-height: 1.5em;
-        padding: 10px;
-        margin: 35px;
-    }
-    
- }
+.diagonal {
+  @include diagonal;
+}
 
- .diagonal {
-    --skew-angle: -5deg;
-    position: relative;
-    isolation: isolate;
-    &::after {
-        content: '';
-        background: linear-gradient(45deg,
-            rgba(15, 36, 0, 1) 0%,
-            rgba(67, 121, 9, 1) 35%,
-            rgba(188, 255, 0, 0.3) 100%);
-        opacity: 0.9;
-        position: absolute;
-        z-index: -1;
-        inset: 0;
-        transform: skewY(var(--skew-angle));
-      }
- }
+// ==================================================
+// SKILLS grid
+// ==================================================
+.parent {
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
- 
-
-
-
+  .div1 {
+    border: 2px solid green;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .div2 {
+    border: 2px solid green;
+    grid-area: 1 / 3 / 2 / 5;
+  }
+  .div3 {
+    border: 2px solid green;
+    grid-area: 1 / 5 / 2 / 7;
+  }
+  .div4 {
+    border: 2px solid green;
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .div5 {
+    border: 2px solid green;
+    grid-area: 2 / 4 / 3 / 7;
+  }
+  .div6 {
+    border: 2px solid green;
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .div7 {
+    border: 2px solid green;
+    grid-area: 3 / 3 / 4 / 5;
+  }
+  .div8 {
+    border: 2px solid green;
+    grid-area: 3 / 5 / 4 / 7;
+  }
+  .div9 {
+    border: 2px solid green;
+    grid-area: 4 / 1 / 5 / 4;
+  }
+  .div10 {
+    border: 2px solid green;
+    grid-area: 4 / 4 / 5 / 7;
+  }
+}
 
 // ==================================================
 // FOOTER
 // ==================================================
 .nav-footer {
-    border: 10px solid red;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.5rem;
-    background-color: black;
-    // padding: 1rem;
+  // @use "myfooter";
+  //   @mixin myFooter;
 
-    a{
-        padding: 1rem;
-        margin: 1rem;
-        font-size: 1rem;
-        color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1 1 0;
+  background-color: black;
+  // padding: 1rem;
 
-        i {
-            font-size: 1.5rem;
-            color: white;
-        }
-    }
-
- 
-    &:hover {
+  a {
+    padding: 1rem;
+    // margin: 1rem;
+    // font-size: 1rem;
+    i {
+      font-size: 2rem;
+      color: $myBlueLight;
+      &:hover {
         color: $myOrange;
-          }
-              // Media query for screens smaller than 768px
-  
-   
-              @media (max-width: 767px) {
-      flex-direction: column;
-      gap: 0.5rem;
+      }
+      // Media query for screens smaller than 768px
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 0.5rem;
 
-      a {
+        a {
           padding: 0.5rem;
           margin: 0.5rem;
           font-size: 0.8rem;
 
           i {
-              font-size: 1.2rem;
+            font-size: 1.2rem;
           }
+        }
       }
+    }
   }
-
-
 }
-
