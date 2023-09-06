@@ -53,6 +53,9 @@
   font-size: 3.5rem;
   color: #fff;
 }
+.card-content > a {
+  color: #fff;
+}
 
 .button {
   /* border: 1px solid blue; */
@@ -73,6 +76,7 @@
 .button:hover,
 .button:focus {
   background-color: #333;
+  color: #ff4a11;
   color: #fff;
 }
 /*   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
