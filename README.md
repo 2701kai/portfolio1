@@ -14,3 +14,5 @@ What I've learned in my humble beginnings:
 ```bash
  npm run you-are-rockstars-(&#x2665;)
 ```
+
+#### Bright minds, beautiful souls. Thank you very much indeed for the privilege of encountering you.
