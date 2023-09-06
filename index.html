@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset2.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./section.css" />
     <link rel="icon" href="./assets/favicon.ico" sizes="192x192" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,11 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <!-- devicons, thanx anna! :)  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
     <title>kai | Portfolio, reloaded</title>
@@ -56,58 +62,11 @@
       <h1>Realise your creative ideas</h1>
     </header>
 
-    <!-- <div id="Preface" class="preface fullsize">
-      <h2>preface</h2>
-      <div class="container-100">
-        <div class="animated-100"></div>
-        <div class="animated-100"></div>
-      </div>
-      <div id="flex-1" class="preface-flex-parent">
-        <div class="preface-flex-child-left p-right">
-          <h3>Website Development & SEO</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-            facilis consectetur voluptatibus facere provident alias tempora
-            pariatur minima ratione quidem ex ut asperiores aut, mollitia
-            laboriosam illo molestiae odit suscipit repudiandae omnis possimus
-            obcaecati consequuntur cum laborum! Nam labore maxime ipsa at iure
-            temporibus deleniti totam, officia placeat! Aut voluptas facere
-            doloribus neque deleniti expedita dolor quaerat eveniet sequi,
-            asperiores fuga eum possimus autem ab dignissimos! Doloribus
-            voluptatibus omnis, saepe adipisci architecto eaque libero
-            temporibus, officiis id minima aperiam ea ut error mollitia numquam.
-            Vel voluptate sunt ipsa, dolore ea earum tempora perspiciatis
-            cumque, omnis consectetur excepturi necessitatibus ex ipsum.
-          </p>
-        </div>
-        <div class="preface-flex-child-right p-left">
-          <h3>Web Design & Brand Strategy</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-            facilis consectetur voluptatibus facere provident alias tempora
-            pariatur minima ratione quidem ex ut asperiores aut, mollitia
-            laboriosam illo molestiae odit suscipit repudiandae omnis possimus
-            obcaecati consequuntur cum laborum! Nam labore maxime ipsa at iure
-            temporibus deleniti totam, officia placeat! Aut voluptas facere
-            doloribus neque deleniti expedita dolor quaerat eveniet sequi,
-            asperiores fuga eum possimus autem ab dignissimos! Doloribus
-            voluptatibus omnis, saepe adipisci architecto eaque libero
-            temporibus, officiis id minima aperiam ea ut error mollitia numquam.
-            Vel voluptate sunt ipsa, dolore ea earum tempora perspiciatis
-            cumque, omnis consectetur excepturi necessitatibus ex ipsum.
-          </p>
-        </div>
-      </div>
-      <a href="https://weinem.io" target="_blank" class="preface-a"
-        >see also »</a
-      > -->
-
     <!-- ---------------------------------------------------------------------- -->
     <!-- PORTFOLIO -->
     <!-- ---------------------------------------------------------------------- -->
 
     <section id="Portfolio" class="portfolio">
-      <!-- <section id="Portfolio"> -->
       <div class="portfolio-header">
         <h2>PORTFOLIO</h2>
       </div>
@@ -143,48 +102,132 @@
     <!-- ABOUT -->
     <!-- ---------------------------------------------------------------------- -->
 
-    <!-- <section id="About" class="about">
-      <div class="fullsize">
-        <h2>ABOUT</h2>
-
-        <h3></h3>
-
-        <div class="about-flex-parent p-white">
-          <div> -->
-    <!-- <div class="pic"> -->
-    <!-- <img class="about-flex-child pic" src="./assets/boom.jpg" alt="" /> -->
-    <!-- </div> -->
-    <!-- </div>
-          <div class="about-flex-child">
-            <p>I didn't want to bore you with my private life...</p>
-            <p>but if it really interests you:</p>
-            <p>
-              <a class="button button1" href="./pages/more-about/index.html"
-                >Peep here</a
-              >
-            </p>
-            <a href=""></a>
-          </div> -->
-    <!-- </div>
-      </div>
-    </section> -->
-
     <!-- ----------------------------------------------------------------------- -->
     <!-- SKILLS grid -->
     <!-- ----------------------------------------------------------------------- -->
-    <div id="skills" class="parent">
-      <h3>hallo</h3>
-      <div class="div1"></div>
-      <div class="div2"></div>
-      <div class="div3"></div>
-      <div class="div4"></div>
-      <div class="div5"></div>
-      <div class="div6"></div>
-      <div class="div7"></div>
-      <div class="div8"></div>
-      <div class="div9"></div>
-      <div class="div10"></div>
-    </div>
+
+    <!-- <section id="skills" class="cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>HTML</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div> -->
+
+    <section id="skills" class="cards">
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>HTML</h2>
+          <i class="devicon-html5-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>CSS</h2>
+          <i class="devicon-css3-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>JS</h2>
+          <i class="devicon-javascript-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>Tailwind</h2>
+          <i class="devicon-tailwindcss-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>VITE</h2>
+          <i class="devicon-react-original"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>Wordpress</h2>
+          <i class="devicon-wordpress-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="card">
+        <div class="content">
+          <h2 class="title">Mountain View</h2>
+          <p class="copy">
+            Check out all of these gorgeous mountain trips with beautiful views
+            of, you guessed it, the mountains
+          </p>
+          <button class="btn">View Trips</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <i class="devicon-css3-plain-wordmark"></i>
+          <h2 class="title">CSS</h2>
+          <p class="copy">
+            Plan your next beach trip with these fabulous destinations
+          </p>
+          <button class="btn">View Trips</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Desert Destinations</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Explore The Galaxy</h2>
+          <p class="copy">
+            Seriously, straight up, just blast off into outer space today
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+      </div> -->
+    <!-- </section> -->
 
     <!-- ----------------------------------------------------------------------
            FOOTER
