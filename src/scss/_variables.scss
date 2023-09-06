@@ -3,8 +3,6 @@ $myOrange: #ff4a11;
 $myBlue: #447ff4;
 $myBlueLight: #2ea3f2;
 $myBgColor: #262626;
-$bp-md: 600px;
-$bp-lg: 800px;
 
 @mixin myHeader {
   // margin-top: 50px;
@@ -19,12 +17,6 @@ $bp-lg: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Bruno Ace SC", cursive;
-}
-
-// ==================================================
-// CARD
-// ==================================================
-@mixin card {
 }
 
 // ==================================================
