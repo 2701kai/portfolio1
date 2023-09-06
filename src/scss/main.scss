@@ -341,29 +341,6 @@ i {
 // ==================================================
 // SKILLS grid
 // ==================================================
-.cards {
-  border: 2px solid red;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: $bp-lg) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .card {
-    border: 1px solid $myBlue;
-    @include card;
-  }
-}
 
 //   .div1 {
 //     border: 2px solid green;
