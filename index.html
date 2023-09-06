@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset2.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./section.css" />
     <link rel="icon" href="./assets/favicon.ico" sizes="192x192" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,11 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <!-- devicons, thanx anna! :)  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
     <title>kai | Portfolio, reloaded</title>
@@ -41,12 +47,12 @@
             <!-- <li><a href="#Preface">Preface</a></li> -->
             <li><a href="#Portfolio">Portfolio</a></li>
             <!-- <li><a href="#Testimonials">Testimonials</a></li> -->
-            <li><a href="#About">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <!-- <li><a href="./contact.html">Contact</a></li> -->
             <li><a href="#Contact">Contact</a></li>
             <!-- <li><a href="https://kai.weinem.io/CV.pdf" tgit asdd .arget="_blank">CV</a></li> -->
             <li>
-              <a href="https://github.com/2701kai/multi" target="_blank"
+              <a href="https://github.com/2701kai/portfolio1" target="_blank"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </li>
@@ -61,7 +67,6 @@
     <!-- ---------------------------------------------------------------------- -->
 
     <section id="Portfolio" class="portfolio">
-      <!-- <section id="Portfolio"> -->
       <div class="portfolio-header">
         <h2>PORTFOLIO</h2>
       </div>
@@ -97,48 +102,114 @@
     <!-- ABOUT -->
     <!-- ---------------------------------------------------------------------- -->
 
-    <!-- <section id="About" class="about">
-      <div class="fullsize">
-        <h2>ABOUT</h2>
-
-        <h3></h3>
-
-        <div class="about-flex-parent p-white">
-          <div> -->
-    <!-- <div class="pic"> -->
-    <!-- <img class="about-flex-child pic" src="./assets/boom.jpg" alt="" /> -->
-    <!-- </div> -->
-    <!-- </div>
-          <div class="about-flex-child">
-            <p>I didn't want to bore you with my private life...</p>
-            <p>but if it really interests you:</p>
-            <p>
-              <a class="button button1" href="./pages/more-about/index.html"
-                >Peep here</a
-              >
-            </p>
-            <a href=""></a>
-          </div> -->
-    <!-- </div>
-      </div>
-    </section> -->
-
     <!-- ----------------------------------------------------------------------- -->
     <!-- SKILLS grid -->
     <!-- ----------------------------------------------------------------------- -->
-    <h2>hallo</h2>
-    <div id="skills" class="parent">
-      <div class="div1">HTML</div>
-      <div class="div2">CSS</div>
-      <div class="div3">JS</div>
-      <div class="div4">Tailwind</div>
-      <div class="div5">REACT + VITE</div>
-      <div class="div6">WP 1</div>
-      <div class="div7">WP 2</div>
-      <div class="div8">WP 3</div>
-      <div class="div9">WP 4</div>
-      <div class="div10">About Me</div>
-    </div>
+
+    <!-- <section id="skills" class="cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>HTML</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="" class="button">AAAAA</a>
+        </div>
+      </div> -->
+
+    <section id="skills" class="cards">
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>HTML</h2>
+          <i class="devicon-html5-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a
+            href="https://github.com/2701kai/portfolio1/blob/features/css/index.html"
+            class="button"
+            >of this page</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>CSS</h2>
+          <i class="devicon-css3-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a
+            href="https://github.com/2701kai/portfolio1/blob/features/css/style.css"
+            class="button"
+            >of this page</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>JS</h2>
+          <i class="devicon-javascript-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a
+            href="https://github.com/2701kai/portfolio1/blob/features/css/main.js"
+            class="button"
+            >Cute so far..</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>Tailwind</h2>
+          <i class="devicon-tailwindcss-plain"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a
+            href="https://2701kai.github.io/tailwind-first/src/index.html"
+            class="button"
+            >Browser</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>VITE</h2>
+          <i class="devicon-react-original"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            magnam.
+          </p>
+          <a href="https://vite-1-2701kai.vercel.app/" class="button"
+            >1st one</a
+          >
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content svg" id="html">
+          <h2>Wordpress</h2>
+          <i class="devicon-wordpress-plain"></i>
+          <p>
+            Lebe richtig im Falschen, hör watt Anstdändijet. Dein
+            Revolutionssender:
+          </p>
+          <!-- <p>Dein Revolutionssender:</p> -->
+          <a href="https://radio-kotti.de/" class="button">Radio Kotti</a>
+        </div>
+      </div>
+    </section>
 
     <!-- ----------------------------------------------------------------------
            FOOTER
@@ -153,7 +224,7 @@
         <a href="mailto:2701kai@gmail.com" target="_blank"
           ><i class="fa-solid fa-envelope"></i
         ></a>
-        <a href="https://github.com/2701kai/multi" target="_blank"
+        <a href="https://github.com/2701kai/portfolio1" target="_blank"
           ><i class="fa-brands fa-github"></i
         ></a>
         <a href="https://stackoverflow.com/users/21734956/2-k" target="_blank"
